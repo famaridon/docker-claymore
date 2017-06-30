@@ -23,8 +23,8 @@ RUN apt-get update && \
 	rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Get claymore
-ADD https://github.com/nanopool/Claymore-Dual-Miner/releases/download/v9.6/Claymore.s.Dual.Ethereum.Decred_Siacoin_Lbry_Pascal.AMD.NVIDIA.GPU.Miner.v9.6.-.LINUX.tar.gz /claymore.tar.gz
-RUN mkdir /claymore && \
+RUN wget -O /claymore.tar.gz https://github.com/nanopool/Claymore-Dual-Miner/releases/download/v9.6/Claymore.s.Dual.Ethereum.Decred_Siacoin_Lbry_Pascal.AMD.NVIDIA.GPU.Miner.v9.6.-.LINUX.tar.gz && \
+	mkdir /claymore && \
 	tar -xvzf claymore.tar.gz --directory /claymore && \
 	rm -f /claymore.tar.gz && \
 	mkdir /claymore/config
