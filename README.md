@@ -20,6 +20,12 @@ Generate claymore_config_nanopool.zip from https://nanopool.org/ and ```overwrit
 nvidia-docker run -it -d --name docker-claymore -v /home/derf/docker/docker-claymore/config:/claymore/config famaridon/docker-claymore
 ```
 
+or with auto restart 
+
+```
+nvidia-docker run -it -d --restart always --name docker-claymore -v /home/derf/docker/docker-claymore/config:/claymore/config famaridon/docker-claymore
+```
+
  Change ```/home/derf/docker/docker-claymore``` to your clone directory.
  
  ## Have fun
