@@ -13,7 +13,7 @@ git clone https://github.com/famaridon/docker-claymore.git
 docker image build -t famaridon/docker-claymore .
 ```
 ## Update setting for nanopool 
-Generate claymore_config_nanopool.zip from https://nanopool.org/ and ```overwrite the config/claymore_config_nanopool.zip```
+Generate claymore_config_nanopool.zip from https://nanopool.org/ and overwrite the ```config/claymore_config_nanopool.zip```
 
 ## Run docker 
 ```
